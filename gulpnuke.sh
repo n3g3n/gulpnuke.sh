@@ -39,9 +39,9 @@ echo    # (optional) move to a new line
 # touch .gitignore
   printf " ${BRed} Write .gitignore ... ${Color_Off} \n"
   echo $(touch .gitignore1)
-  echo $(.npm>>.gitignore1>)
-  echo $(.env>>.gitignore1>)
-  echo $(dist>>.gitignore1>)
-  echo $(.node_modules>>.gitignore1>)
-  echo $(.cache>>.gitignore1>)
+  echo $(.npm>>.gitignore1)
+  echo $(.env>>.gitignore1)
+  echo $(dist>>.gitignore1)
+  echo $(.node_modules>>.gitignore1)
+  echo $(.cache>>.gitignore1)
 printf "\n"
