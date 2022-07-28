@@ -44,4 +44,11 @@ echo    # (optional) move to a new line
   echo $(dist>>.gitignore1)
   echo $(.node_modules>>.gitignore1)
   echo $(.cache>>.gitignore1)
+  #errors
+#sh: 42: .npm: not found
+#sh: 43: .env: not found
+#sh: 44: dist: not found
+#sh: 45: .node_modules: not found
+#sh: 46: .cache: not found
+
 printf "\n"
