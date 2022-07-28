@@ -44,6 +44,3 @@ echo    # (optional) move to a new line
   echo "dist">.gitignore1
   echo ".node_modules">.gitignore1
   echo ".cache">.gitignore1
-
-
-printf "\n"
