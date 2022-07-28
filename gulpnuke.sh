@@ -15,7 +15,7 @@ echo -e "# After install run ${BRed}gulp watcher${Color_Off} for dev mode"
 echo -e "# After install run ${BRed}gulp ${Color_Off} for create  ${BRed}/dist${Color_Off} folder"
 read -p "Do you want to install Y/N " -r $ASK
 echo    # (optional) move to a new line
-if [ $REPLY = "Y" ] ; then
+
   echo -e "Installing NVM v17.6.0 Latest"
   echo -e nvm install $NODE_VERSION
   echo -e "Using NVM $NODE_VERSION Latest LTS: Dubnium"
@@ -45,6 +45,3 @@ if [ $REPLY = "Y" ] ; then
   echo $(.node_modules>>.gitignore1>)
   echo $(.cache>>.gitignore1>)
 printf "\n"
-else
-  exit 1 # handle exits from shell or function but don't exit interactive shell
-fi

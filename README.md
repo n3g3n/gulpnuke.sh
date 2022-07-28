@@ -5,7 +5,7 @@ Main purpose is using one script to create all dependencies and proper folder st
 
 ## 2.How to use
 ```bash
-curl https://github.com/n3g3n/gulpnuke.sh/blob/main/gulpnuke.sh --output gulpnuke.sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/n3g3n/gulpnuke.sh/main/gulpnuke.sh)"
 chmod +x gulpnuke.sh
 bash gulpnuke.sh
 ```
