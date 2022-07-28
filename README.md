@@ -4,6 +4,7 @@
 Main purpose is using one script to create all dependencies and proper folder structure for project.
 
 ## 2.How to use
+*Working with NVM only*
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/n3g3n/gulpnuke.sh/main/gulpnuke.sh)"
 chmod +x gulpnuke.sh
@@ -23,7 +24,7 @@ bash gulpnuke.sh
     - css
      - index.css
     - js
-     -index.js
+      - index.js
     - img
      - screenshot.png
     - fonts
