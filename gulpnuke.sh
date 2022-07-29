@@ -5,18 +5,16 @@ BRed='\033[1;31m'         # Red
 IPurple='\033[0;95m'      # Purple
 NODE_VERSION="v17.6.0"
 echo ""
-echo -e "${BRed}GulpNuke master for install GULP project ${Color_Off}"
+echo "${BRed}GulpNuke master for install GULP project ${Color_Off}"
 echo ""
-echo -e "# It will creates gulp project, you must start your project in ${BRed}/src${Color_Off} folder"
-echo -e "# This gulp project had commands for developing and production"
-echo -e "# Same as for compressing and optimize all files it ${BRed}/dist${Color_Off} folder "
+echo "# It will creates gulp project, you must start your project in ${BRed}/src${Color_Off} folder"
+echo "# This gulp project had commands for developing and production"
+echo "# Same as for compressing and optimize all files it ${BRed}/dist${Color_Off} folder "
 echo "# It will creates folders and startup files"
-echo -e "# After install run ${BRed}gulp watcher${Color_Off} for dev mode"
-echo -e "# After install run ${BRed}gulp ${Color_Off} for create  ${BRed}/dist${Color_Off} folder"
-read -p "Do you want to install Y/N " -r $ASK
+echo "# After install run ${BRed}gulp watcher${Color_Off} for dev mode"
+echo "# After install run ${BRed}gulp ${Color_Off} for create  ${BRed}/dist${Color_Off} folder"
 echo    # (optional) move to a new line
-
-  echo -e "Installing NVM v17.6.0 Latest"
+  echo "Installing NVM v17.6.0 Latest"
   echo -e nvm install $NODE_VERSION
   echo -e "Using NVM $NODE_VERSION Latest LTS: Dubnium"
   echo -e nvm use $NODE_VERSION
@@ -39,8 +37,8 @@ echo    # (optional) move to a new line
 # touch .gitignore
   printf " ${BRed} Write .gitignore ... ${Color_Off} \n"
   echo $(touch .gitignore1
-  echo ".npm">.gitignore1
-  echo ".env">.gitignore1
-  echo "dist">.gitignore1
-  echo ".node_modules">.gitignore1
-  echo ".cache">.gitignore1
+  echo ".npm">>.gitignore1
+  echo ".env">>.gitignore1
+  echo "dist">>.gitignore1
+  echo ".node_modules">>.gitignore1
+  echo ".cache">>.gitignore1
