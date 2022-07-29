@@ -5,8 +5,8 @@ BRed='\033[1;31m'         # Red
 IPurple='\033[0;95m'        # Purple
 NODE_VERSION='v17.6.0'   # Node.js version
 # Using for debuuging
-GIT_IGNORE = '.gitignore' # ignore file
-NVM_RC = '.nvmrctest'     #nvmrc file nage
+$GIT_IGNORE = '.gitignore' # ignore file
+$NVM_RC = '.nvmrctest'     #nvmrc file nage
 
 echo ""
 echo "${BRed}GulpNuke master for install GULP project ${Color_Off}"
