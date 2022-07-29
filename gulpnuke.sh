@@ -2,8 +2,12 @@
 # Reset
 Color_Off='\033[0m'       # Text Reset
 BRed='\033[1;31m'         # Red
-IPurple='\033[0;95m'      # Purple
-NODE_VERSION="v17.6.0"
+IPurple='\033[0;95m'        # Purple
+NODE_VERSION='v17.6.0'   # Node.js version
+# Using for debuuging
+GIT_IGNORE = '.gitignore' # ignore file
+NVM_RC = '.nvmrctest'     #nvmrc file nage
+
 echo ""
 echo "${BRed}GulpNuke master for install GULP project ${Color_Off}"
 echo ""
@@ -18,9 +22,9 @@ echo    # (optional) move to a new line
   echo -e nvm install $NODE_VERSION
   echo -e "Using NVM $NODE_VERSION Latest LTS: Dubnium"
   echo -e nvm use $NODE_VERSION
-  echo -e touch .nvmrctest
-  echo $NODE_VERSION >> .nvmrctest
-  echo "$NODE_VERSION in .nvmrctest populated"
+  echo -e touch $NVM_RC
+  echo $NODE_VERSION >> $NVM_RC
+  echo "$NODE_VERSION in $NVM_RC populated"
 
 # install --global gulp-cli
   printf " ${BRed} gulp-cli Install global ... ${Color_Off} \n"
@@ -36,9 +40,10 @@ echo    # (optional) move to a new line
   echo $(npm install --save-dev gulp-sourcemaps gulp-concat gulp-rename gulp-replace gulp-terser gulp-sass sass gulp-postcss autoprefixer cssnano gulp-htmlmin gulp-cssmin vinyl-buffer gulp-purifycss gulp-fontmin gulp-autoprefixer gulp-delete-lines gulp-cheerio gulp-filter gulp-clean gulp-image-lqip fancy-log gulp imagemin-webp autoprefixer cssnano fancy-log gulp-autoprefixer gulp-cheerio gulp-clean gulp-cssmin gulp-delete-lines gulp-filter gulp-fontmin gulp-htmlmin gulp-image-lqip gulp-imagemin gulp-postcss gulp-purifycss gulp-rename gulp-replace gulp-sass gulp-terser htmlparser2 i imagemin-gifsicle imagemin-jpegtran imagemin-mozjpeg imagemin-optipng imagemin-pngquant imagemin-svgo install npm sass vinyl-buffer gulp-avif)
 # touch .gitignore
   printf " ${BRed} Write .gitignore ... ${Color_Off} \n"
-  echo touch .gitignore1
-  echo ".npm">>.gitignore1
-  echo ".env">>.gitignore1
-  echo "dist">>.gitignore1
-  echo ".node_modules">>.gitignore1
-  echo ".cache">>.gitignore1
+  echo -e touch $GIT_IGNORE
+  echo ".npm">>$GIT_IGNORE
+  echo ".env">>$GIT_IGNORE
+  echo "dist">>$GIT_IGNORE
+  echo "/dist">>$GIT_IGNORE
+  echo ".node_modules">>$GIT_IGNORE
+  echo ".cache">>$GIT_IGNORE
