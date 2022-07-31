@@ -18,32 +18,47 @@ echo "# It will creates folders and startup files"
 echo "# After install run ${BRed}gulp watcher${Color_Off} for dev mode"
 echo "# After install run ${BRed}gulp ${Color_Off} for create  ${BRed}/dist${Color_Off} folder"
 echo    # (optional) move to a new line
-  echo "Installing NVM v17.6.0 Latest"
-  echo -e nvm install $NODE_VERSION
-  echo -e "Using NVM $NODE_VERSION Latest LTS: Dubnium"
-  echo -e nvm use $NODE_VERSION
-  echo -e touch $NVM_RC
-  echo $NODE_VERSION >> $NVM_RC
-  echo "$NODE_VERSION in $NVM_RC populated"
+echo "Installing NVM v17.6.0 Latest"
+echo -e nvm install $NODE_VERSION
+echo -e "Using NVM $NODE_VERSION Latest LTS: Dubnium"
+echo -e nvm use $NODE_VERSION
+echo -e touch $NVM_RC
+echo $NODE_VERSION >> $NVM_RC
+echo "$NODE_VERSION in $NVM_RC populated"
 
 # install --global gulp-cli
-  printf " ${BRed} gulp-cli Install global ... ${Color_Off} \n"
-  echo $(npm install --global gulp-cli)
+printf " ${BRed} gulp-cli Install global ... ${Color_Off} \n"
+echo $(npm install --global gulp-cli)
 #init
-  printf " ${BRed} npm init -y ... ${Color_Off} \n"
-  echo $(npm init -y)
+printf " ${BRed} npm init -y ... ${Color_Off} \n"
+echo $(npm init -y)
 #gulp
-  printf " ${BRed} Install gulp@4 ... ${Color_Off} \n"
-  echo $(npm install gulp@4)
+printf " ${BRed} Install gulp@4 ... ${Color_Off} \n"
+echo $(npm install gulp@4)
 # Install gulpfile depencie
-  printf " ${BRed} Install gulpfile depencie ... ${Color_Off} \n"
-  echo $(npm install --save-dev gulp-sourcemaps gulp-concat gulp-rename gulp-replace gulp-terser gulp-sass sass gulp-postcss autoprefixer cssnano gulp-htmlmin gulp-cssmin vinyl-buffer gulp-purifycss gulp-fontmin gulp-autoprefixer gulp-delete-lines gulp-cheerio gulp-filter gulp-clean gulp-image-lqip fancy-log gulp imagemin-webp autoprefixer cssnano fancy-log gulp-autoprefixer gulp-cheerio gulp-clean gulp-cssmin gulp-delete-lines gulp-filter gulp-fontmin gulp-htmlmin gulp-image-lqip gulp-imagemin gulp-postcss gulp-purifycss gulp-rename gulp-replace gulp-sass gulp-terser htmlparser2 i imagemin-gifsicle imagemin-jpegtran imagemin-mozjpeg imagemin-optipng imagemin-pngquant imagemin-svgo install npm sass vinyl-buffer gulp-avif)
+printf " ${BRed} Install gulpfile depencie ... ${Color_Off} \n"
+echo $(npm install --save-dev gulp-sourcemaps gulp-concat gulp-rename gulp-replace gulp-terser gulp-sass sass gulp-postcss autoprefixer cssnano gulp-htmlmin gulp-cssmin vinyl-buffer gulp-purifycss gulp-fontmin gulp-autoprefixer gulp-delete-lines gulp-cheerio gulp-filter gulp-clean gulp-image-lqip fancy-log gulp imagemin-webp autoprefixer cssnano fancy-log gulp-autoprefixer gulp-cheerio gulp-clean gulp-cssmin gulp-delete-lines gulp-filter gulp-fontmin gulp-htmlmin gulp-image-lqip gulp-imagemin gulp-postcss gulp-purifycss gulp-rename gulp-replace gulp-sass gulp-terser htmlparser2 i imagemin-gifsicle imagemin-jpegtran imagemin-mozjpeg imagemin-optipng imagemin-pngquant imagemin-svgo install npm sass vinyl-buffer gulp-avif)
 # touch .gitignore
-  printf " ${BRed} Write .gitignore ... ${Color_Off} \n"
-  echo -e touch $GIT_IGNORE
-  echo ".npm">>$GIT_IGNORE
-  echo ".env">>$GIT_IGNORE
-  echo "dist">>$GIT_IGNORE
-  echo "/dist">>$GIT_IGNORE
-  echo ".node_modules">>$GIT_IGNORE
-  echo ".cache">>$GIT_IGNORE
+printf " ${BRed} Write .gitignore ... ${Color_Off} \n"
+echo -e touch $GIT_IGNORE
+echo ".npm">>$GIT_IGNORE
+echo ".env">>$GIT_IGNORE
+echo "dist">>$GIT_IGNORE
+echo "/dist">>$GIT_IGNORE
+echo ".node_modules">>$GIT_IGNORE
+echo ".cache">>$GIT_IGNORE
+# Folder structure
+echo $(mkdir src)
+echo $(mkdir dist)
+cd src
+echo $(mkdir base)
+cd base
+echo $(mkdir assets)
+echo $(touch index.html)
+cd assets
+echo $(mkdir css)
+echo $(mkdir fonts)
+echo $(mkdir img)
+echo $(mkdir js)
+echo $(mkdir sass)
+echo $(mkdir webfonts)
