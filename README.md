@@ -17,6 +17,8 @@ bash gulpnuke.sh
 - Install Gulp4 (master branch)
 
 ### 2.1.a Folder stricture
+- gulpfile.js
+- .nvmrc
 - src
   - /base
     - /scss
