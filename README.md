@@ -8,8 +8,12 @@ Main purpose is using one script to create all dependencies and proper folder st
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/n3g3n/gulpnuke.sh/main/gulpnuke.sh)"
 ```
-`chmod +x gulpnuke.sh`
-`bash gulpnuke.sh`
+```bash
+chmod +x gulpnuke.sh
+```
+```bash
+bash gulpnuke.sh
+```
 
 ### 2.1 Script will do
 - Folder structure
