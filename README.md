@@ -7,9 +7,9 @@ Main purpose is using one script to create all dependencies and proper folder st
 *Working with NVM only*
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/n3g3n/gulpnuke.sh/main/gulpnuke.sh)"
-chmod +x gulpnuke.sh
-bash gulpnuke.sh
 ```
+`chmod +x gulpnuke.sh`
+`bash gulpnuke.sh`
 
 ### 2.1 Script will do
 - Folder structure
@@ -21,6 +21,7 @@ bash gulpnuke.sh
 - .nvmrc
 - src
   - /base
+  - index.html
     - /scss
       - index.scss
     - /css
@@ -30,7 +31,7 @@ bash gulpnuke.sh
     - /img
       - screenshot.png
     - /fonts
-  - index.html
+
 
 ### 2.1.b How to use project later
 For start developing use follow:
