@@ -48,17 +48,20 @@ echo "/dist">>$GIT_IGNORE
 echo ".node_modules">>$GIT_IGNORE
 echo ".cache">>$GIT_IGNORE
 # Folder structure
-echo $(mkdir src)
-echo $(mkdir dist)
+mkdir src
+mkdir dist
 cd src
-echo $(mkdir base)
+mkdir base
 cd base
-echo $(mkdir assets)
-echo $(touch index.html)
+mkdir assets
+touch index.html
 cd assets
-echo $(mkdir css)
-echo $(mkdir fonts)
-echo $(mkdir img)
-echo $(mkdir js)
-echo $(mkdir sass)
-echo $(mkdir webfonts)
+mkdir css
+mkdir fonts
+mkdir img
+mkdir js
+mkdir sass
+mkdir webfonts
+cd ../../../
+echo $(ls -al)
+# Creating gulpfile

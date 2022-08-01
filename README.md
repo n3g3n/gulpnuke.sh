@@ -18,16 +18,16 @@ bash gulpnuke.sh
 
 ### 2.1.a Folder stricture
 - src
-  - base
-    - scss
-     - index.scss
-    - css
-     - index.css
-    - js
+  - /base
+    - /scss
+      - index.scss
+    - /css
+      - index.css
+    - /js
       - index.js
-    - img
-     - screenshot.png
-    - fonts
+    - /img
+      - screenshot.png
+    - /fonts
   - index.html
 
 ### 2.1.b How to use project later
