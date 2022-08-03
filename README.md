@@ -5,6 +5,7 @@ Main purpose is using one script to create all dependencies and proper folder st
 
 ## 2.How to use
 *Working with NVM only*
+*Project folder MUST have a valid name without spaces, use `project-name` format*
 ```fish
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/n3g3n/gulpnuke.sh/main/gulpnuke.sh)"
 ```
